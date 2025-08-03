@@ -45,16 +45,13 @@ const Features = () => {
               ref={(el) => (featureRefs.current[0] = el)}
               className={`text-center transition-all duration-1000 ${isVisible[0] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
             >
-  <div className="mb-8 flex justify-center">
-                {/* Icon - 3 curved lines */}
-               <img src="/website/icon1.png" className='h-24 w-24'/>
-               
+              <div className="mb-8 flex justify-center">
+                <img src="/website/icon1.png" className='h-24 w-24'/>
               </div>
               <h3 className="text-2xl font-semibold text-blue-600 mb-6">Teen Patti and More</h3>
               <p className="text-gray-700 leading-relaxed text-base">
                 Enjoy a wide range of games including Teen Patti, Ludo, and other popular titles. Experience the thrill of real money gaming and compete with genuine players for exciting wins.
               </p>
-              
             </div>
 
             {/* Instant Withdrawals */}
@@ -63,9 +60,7 @@ const Features = () => {
               className={`text-center transition-all duration-1000 delay-200 ${isVisible[1] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
             >
               <div className="mb-8 flex justify-center">
-                {/* Icon - 3 curved lines */}
-               <img src="/website/icon2.png" className='h-24 w-24'/>
-               
+                <img src="/website/icon2.png" className='h-24 w-24'/>
               </div>
               <h3 className="text-2xl font-semibold text-blue-600 mb-6">Instant Withdrawals</h3>
               <p className="text-gray-700 leading-relaxed text-base">
@@ -78,10 +73,8 @@ const Features = () => {
               ref={(el) => (featureRefs.current[2] = el)}
               className={`text-center transition-all duration-1000 delay-400 ${isVisible[2] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
             >
-                <div className="mb-8 flex justify-center">
-                {/* Icon - 3 curved lines */}
-               <img src="/website/icon3.png" className='h-24 w-24'/>
-               
+              <div className="mb-8 flex justify-center">
+                <img src="/website/icon3.png" className='h-24 w-24'/>
               </div>
               <h3 className="text-2xl font-semibold text-blue-600 mb-6">Player Safety</h3>
               <p className="text-gray-700 leading-relaxed text-base">
@@ -93,35 +86,18 @@ const Features = () => {
       </section>
 
       {/* Game of the Month Section - With Fixed Background */}
-      <section className="relative overflow-hidden">
-        {/* Fixed Background Container */}
-        <div className="relative h-[600px]">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <img 
-              src="/website/Capture.JPG" 
-              alt="Game of the Month Background" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            {/* Optional overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/30"></div>
-          </div>
-
-          {/* Scrollable Content Overlay */}
-          <div className="absolute inset-0 overflow-y-auto">
-            <div className="h-full flex items-center">
-              <div 
-                ref={(el) => (featureRefs.current[3] = el)}
-                className={`w-full px-4 transition-all duration-1000 ${isVisible[3] ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
-              >
-                <div className="max-w-2xl mx-auto bg-black/40 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/20">
-                  <h2 className="text-3xl font-bold text-yellow-400 mb-4">Month's Game of the Month</h2>
-                  <h3 className="text-2xl font-bold text-white mb-3">Game of the Month: Teen Patti</h3>
-                  <p className="text-gray-100 leading-relaxed">
-                    Get ready for endless fun with Teen Patti, the game of the month on DESI GAMES. Dive into a world of strategy, skill, and excitement as you compete for big wins!
-                  </p>
-                </div>
-              </div>
+      <section className="game-of-month-section w-full flex items-center justify-center text-white">
+        <div className="w-full min-h-[600px] flex items-center justify-center px-4 py-20">
+          <div 
+            ref={(el) => (featureRefs.current[3] = el)}
+            className={`max-w-2xl w-full transition-all duration-1000 ${isVisible[3] ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
+          >
+            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/20">
+              <h2 className="text-3xl font-bold text-yellow-400 mb-4">Month's Game of the Month</h2>
+              <h3 className="text-2xl font-bold text-white mb-3">Game of the Month: Teen Patti</h3>
+              <p className="text-gray-100 leading-relaxed">
+                Get ready for endless fun with Teen Patti, the game of the month on DESI GAMES. Dive into a world of strategy, skill, and excitement as you compete for big wins!
+              </p>
             </div>
           </div>
         </div>
@@ -138,14 +114,12 @@ const Features = () => {
               ref={(el) => (featureRefs.current[4] = el)}
               className={`relative overflow-hidden rounded-lg shadow-xl h-80 transition-all duration-1000 ${isVisible[4] ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}
             >
-              {/* Background Image */}
               <img 
                 src="/website/feature4.jpg" 
                 alt="Real Money Gaming" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
               
-              {/* Text Card Overlay */}
               <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-6 w-5/6 max-w-xs">
                 <h3 className="text-2xl font-bold text-blue-600 mb-2">Real Money Gaming</h3>
                 <p className="text-gray-700">Safe & Genuine</p>
@@ -157,14 +131,12 @@ const Features = () => {
               ref={(el) => (featureRefs.current[5] = el)}
               className={`relative overflow-hidden rounded-lg shadow-xl h-80 transition-all duration-1000 delay-200 ${isVisible[5] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
             >
-              {/* Background Image */}
               <img 
                 src="/website/feature5.jpg" 
                 alt="Instant Withdrawals" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
               
-              {/* Text Card Overlay */}
               <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-6 w-5/6 max-w-xs">
                 <h3 className="text-2xl font-bold text-blue-600 mb-2">Instant Withdrawals</h3>
                 <p className="text-gray-700">Variety of Games</p>
@@ -176,14 +148,12 @@ const Features = () => {
               ref={(el) => (featureRefs.current[6] = el)}
               className={`relative overflow-hidden rounded-lg shadow-xl h-80 transition-all duration-1000 delay-400 ${isVisible[6] ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}
             >
-              {/* Background Image */}
               <img 
                 src="/website/feature6.jpg" 
                 alt="Player Safety" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
               
-              {/* Text Card Overlay */}
               <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-6 w-5/6 max-w-xs">
                 <h3 className="text-2xl font-bold text-blue-600 mb-2">Player Safety</h3>
                 <p className="text-gray-700">24/7 Support</p>
@@ -193,7 +163,7 @@ const Features = () => {
         </div>
       </section>
 
-      {/* CSS for animations */}
+      {/* CSS for animations and parallax */}
       <style jsx>{`
         @keyframes float {
           0%, 100% {
@@ -208,6 +178,26 @@ const Features = () => {
           75% {
             transform: translateY(20px) translateX(5px);
           }
+        }
+
+        .game-of-month-section {
+          background-image: url('/website/Capture.JPG');
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+
+        .game-of-month-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.3);
+          pointer-events: none;
         }
       `}</style>
     </div>

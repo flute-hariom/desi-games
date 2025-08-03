@@ -49,3 +49,27 @@ body {
     background-image: radial-gradient(circle at center, var(--tw-gradient-stops));
   }
 }
+
+
+
+
+.game-of-month-section {
+  background-image: url('/website/Capture.JPG');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Optional: Add an overlay for better text readability */
+.game-of-month-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}

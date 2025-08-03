@@ -99,7 +99,7 @@ const Features = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img 
-              src="/website/Capture.jpg" 
+              src="/website/Capture.JPG" 
               alt="Game of the Month Background" 
               className="absolute inset-0 w-full h-full object-cover"
             />
